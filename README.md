@@ -13,12 +13,17 @@ Spring Boot Application to handle employess from DB
 
 ### Use Cases
 
-### GET/employess
+### GET/employees
 ```bash
   curl -v  localhost:8080/employees 
 ```
 
-### POST/employes
+### POST/employees
 ```bash
   curl -X POST localhost:8080/employees -H 'Content-type:application/json' -d '{"name": "Samwise Gamgee", "role": "gardener"}'
+```
+
+### GET/employees/{id}
+```bash
+  curl -v localhost:8080/employess/1
 ```
