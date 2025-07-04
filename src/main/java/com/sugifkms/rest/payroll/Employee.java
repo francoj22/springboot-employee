@@ -12,6 +12,8 @@ class Employee {
   private @Id
   @GeneratedValue Long id;
   private String name;
+  private String role;
+  private String deposit;
   private String solanceFrom;
   private String SolanceTo;
   private String amountSell;
@@ -20,13 +22,9 @@ class Employee {
   private String country;
   private String paymentRef;
   private String purposeRef;
-  private String role;
-  private String deposit;
 
-  Employee() {}
 
-  Employee(String name, String role) {
-
+  Employee(String name, String role, String deposit) {
     this.name = name;
     this.role = role;
     this.deposit = deposit;
