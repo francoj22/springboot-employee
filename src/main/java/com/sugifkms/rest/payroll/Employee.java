@@ -25,7 +25,7 @@ class Employee {
 
   Employee() {}
 
-  Employee(String name, String role, String deposit) {
+  Employee(String name, String role) {
 
     this.name = name;
     this.role = role;
