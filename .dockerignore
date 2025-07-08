@@ -1,0 +1,20 @@
+# Maven
+target/
+!target/*.jar
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# Git
+.git/
+.gitignore
+
+# Misc
+*.log
+*.tmp
+*.temp
