@@ -14,25 +14,26 @@ class Employee {
   private String name;
   private String role;
   private String deposit;
-  private String solanceFrom;
-  private String SolanceTo;
+  private String balanceFrom;
+  private String balanceTo;
   private String amountSell;
   private String timePlaced;
-  private String befeficiary;
+  private String beneficiary;
   private String country;
   private String paymentRef;
   private String purposeRef;
 
+  Employee() {} // JPA requires default constructor
 
   Employee(String name, String role, String deposit) {
     this.name = name;
     this.role = role;
     this.deposit = deposit;
-    this.solanceFrom = "EUR";
-    this.SolanceTo = "GBP";
+    this.balanceFrom = "EUR";
+    this.balanceTo = "GBP";
     this.amountSell = "1000";
     this.timePlaced = "747.10";
-    this.befeficiary = "NEOBANK1451232332232";
+    this.beneficiary = "NEOBANK1451232332232";
     this.country = "IRL";
     this.paymentRef = "Invoice #12345";
     this.purposeRef = "Invoice payment";  
@@ -48,6 +49,42 @@ class Employee {
 
   public String getRole() {
     return this.role;
+  }
+
+  public String getDeposit() {
+    return this.deposit;
+  }
+
+  public String getBalanceFrom() {
+    return this.balanceFrom;
+  }
+
+  public String getBalanceTo() {
+    return this.balanceTo;
+  }
+
+  public String getAmountSell() {
+    return this.amountSell;
+  }
+
+  public String getTimePlaced() {
+    return this.timePlaced;
+  }
+
+  public String getBeneficiary() {
+    return this.beneficiary;
+  }
+
+  public String getCountry() {
+    return this.country;
+  }
+
+  public String getPaymentRef() {
+    return this.paymentRef;
+  }
+
+  public String getPurposeRef() {
+    return this.purposeRef;
   }
 
   public void setId(Long id) {
@@ -66,8 +103,36 @@ class Employee {
     this.deposit = deposit;
   }
 
-  public String getDeposit() {
-    return this.deposit;
+  public void setBalanceFrom(String balanceFrom) {
+    this.balanceFrom = balanceFrom;
+  }
+
+  public void setBalanceTo(String balanceTo) {
+    this.balanceTo = balanceTo;
+  }
+
+  public void setAmountSell(String amountSell) {
+    this.amountSell = amountSell;
+  }
+
+  public void setTimePlaced(String timePlaced) {
+    this.timePlaced = timePlaced;
+  }
+
+  public void setBeneficiary(String beneficiary) {
+    this.beneficiary = beneficiary;
+  }
+
+  public void setCountry(String country) {
+    this.country = country;
+  }
+
+  public void setPaymentRef(String paymentRef) {
+    this.paymentRef = paymentRef;
+  }
+
+  public void setPurposeRef(String purposeRef) {
+    this.purposeRef = purposeRef;
   }
 
   @Override
